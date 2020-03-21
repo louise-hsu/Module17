@@ -35,8 +35,8 @@ Using machine learning techniques to identfy credit risk - different models to p
 
 ## Summary/ Analysis and Recommendations
 
-# credit_risk_resampling:
-# Naive Random Over Sampling
+### credit_risk_resampling:
+### Naive Random Over Sampling
 balanced accuracy score:
 For the Naive Random Oversampling model, the balanced accuracy score is ~66%. It detects ~66% of risks correctly - true positives and true negatives.
 
@@ -49,7 +49,7 @@ The low-risk has a recall score of .58/58%, which means the predicted true posit
 quick summary:
 Overall, the company tends to play it safer and are more sensitive to identify high-risk loans. Of all of high-risks identified/predicted, most of them (99%) are actually not high-risk but low risks. Of all the low-risks identified/predicted, most of them are accurate and are low-risk. The accuracy score of 66% is most likely lowered due to the predicted high-risk loans that are actually low-risk loans.
 
-# SMOTEE Oversampling
+### SMOTEE Oversampling
 balanced accuracy score:
 For the SMOTEE Oversampling model, the balanced accuracy score is ~65%. It detects ~65% of risks correctly - true positives and true negatives.
 
@@ -62,7 +62,7 @@ The low-risk has a recall score of .68/68%, which means the predicted true posit
 quick summary:
 Overall, the company tends to play it safer and are more sensitive to identify high-risk loans. Of all of high-risks identified/predicted, most of them (99%) are actually not high-risk but low risks. Of all the low-risks identified/predicted, most of them are accurate and are low-risk. The accuracy score of 65% is most likely lowered due to the predicted high-risk loans that are actually low-risk loans.
 
-# Undersampling
+### Undersampling
 balanced accuracy score:
 For the Undersampling model, the balanced accuracy score is ~64%. It detects ~64% of risks correctly - true positives and true negatives.
 
@@ -75,7 +75,7 @@ The low-risk has a recall score of .40/40%, which means the predicted true posit
 quick summary:
 Overall, the company tends to play it safer and are more sensitive to identify high-risk loans. Of all of high-risks identified/predicted, most of them (99%) are actually not high-risk but low risks. Of all the low-risks identified/predicted, most of them are accurate and are low-risk. The accuracy score of 64% is most likely lowered due to the predicted high-risk loans that are actually low-risk loans.
 
-# Combination (Over and Under) Sampling
+### Combination (Over and Under) Sampling
 balanced accuracy score:
 For the Niave Random Oversampling model, the balanced accuracy score is ~53%. It detects ~53% of risks correctly - true positives and true negatives.
 
@@ -88,13 +88,13 @@ The low-risk has a recall score of .57/57%, which means the predicted true posit
 quick summary:
 Overall, the company tends to play it safer and are more sensitive to identify high-risk loans. Of all of high-risks identified/predicted, most of them (99%) are actually not high-risk but low risks. Of all the low-risks identified/predicted, most of them are accurate and are low-risk. The accuracy score of 53% is most likely lowered due to the predicted high-risk loans that are actually low-risk loans.
 
-# Recommendation
+### Recommendation
 Out of all these models,I do not think there is one especially better than the others. All these models are quite similar in values.
 
 If I had to recommend one model, I would recommend the Naive Random Oversampling model. The reason for this is because the it seems like the banks/loaning companies prefer to be safe and identify high-risk loans in order to prevents losing money. If this is the case, the high-risk recall score would be very beneficial, and the Naive Random Sample has the highest high-risk recall score of 0.74. This would mean we correctly identified/predicted more of the high risk loans out of all the actual high risk loans in the data.
 
-# credit_risk_ensemble:
-# Balanced Random Forest Classifier
+### credit_risk_ensemble:
+### Balanced Random Forest Classifier
 balanced accuracy score:
 For the Balanced Random Forest Classifier, the balanced accuracy score is ~79%. It detects ~79% of risks correctly - true positives and true negatives.
 
@@ -107,7 +107,7 @@ The low-risk has a recall score of .90/90%, which means the predicted true posit
 quick summary:
 Overall, the company tends to play it safer and are more sensitive to identify high-risk loans. Of all of high-risks predicted, 96% are actually low-risk, and 4% out of the predicted high-risk are correct (true-positives/ actual high-risk). Of all the low-risks predicted, most of them are accurate and are low-risk. The accuracy score of 79% is most likely lowered due to the predicted high-risk loans that are actually low-risk loans
 
-# Easy Ensemble Adaboost
+### Easy Ensemble Adaboost
 balanced accuracy score:
 For the Easy Ensemble Adaboost, the balanced accuracy score is ~93%. It detects ~93% of risks correctly - true positives and true negatives.
 
@@ -120,7 +120,7 @@ The low-risk has a recall score of .94/94% true, which means the predicted true 
 quick summary:
 Overall, the company tends to play it safer and are more sensitive to identify high-risk loans. Of all of high-risks predicted, 91% are actually low-risk, and 9% out of the predicted high-risk are correct (true-positives/ actual high-risk). Of all the low-risks predicted, most of them are accurate and are low-risk. The accuracy score of 93% is most likely lowered due to the predicted high-risk loans that are actually low-risk loans
 
-# Recommendation
+### Recommendation
 I would recommend using the Easy Ensemble Adaboost model. It has a higher accuracy of ~93% and identifying true positives.
 
 Also, the precision value is higher, which means the modeling is better at predicting true low-risk and high-risk. This will allow to better predict actual high-risk loans, which will save the company money. You do not want to loan out money to people of high-risk because most likely you will not get that money returned with interest. If you loan out money to high-riskers, you will most likely lose money. The recall vaue is higher as well, which means more of the predicted high-risk and low risk are true/accurate.
